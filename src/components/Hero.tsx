@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const roles = ["Junior Software Engineer", "Web Developer", "Full Stack Developer"];
+const roles = ["Full Stack Developer", "GenAI / LLM Engineer", "EDA Tools Developer"];
 
 export default function Hero() {
   return (
@@ -49,8 +49,8 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-6 text-lg text-gray-600 max-w-xl mx-auto leading-relaxed"
         >
-          Building scalable applications and optimizing system performance.
-          Passionate about crafting efficient digital solutions that drive business success.
+          Building AI-powered applications, EDA design tools, and full-stack web platforms.
+          Passionate about generative AI, digital circuit design, and high-performance web experiences.
         </motion.p>
 
         <motion.div

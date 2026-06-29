@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "Web Development",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "WordPress"],
+    title: "Frontend & Frameworks",
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "HTML/CSS"],
   },
   {
-    title: "Programming & Database",
-    skills: ["Python", "MySQL", "Express.js", "REST APIs"],
+    title: "AI / ML & Backend",
+    skills: ["Generative AI", "LLMs", "RAG Pipelines", "Python", "REST APIs", "Node.js"],
   },
   {
-    title: "IoT & Tools",
-    skills: ["Arduino IDE", "Sensor Integration", "Unity3D", "Blender", "Figma", "Wireshark", "Git"],
+    title: "EDA & Tools",
+    skills: ["Verilog/HDL", "VCD Analysis", "Boolean Algebra", "Canvas API", "Git", "Vercel"],
   },
 ];
 
