@@ -1,13 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #111111;
+  --background: #f8f8f6;
+  --foreground: #4b5563;
+  --card: #ffffff;
+  --subtle: #f0f0ec;
+  --tag: #e8e8e4;
+  --heading: #111827;
+  --sec: #6b7280;
+  --muted: #9ca3af;
+  --bdr: #e0e0dc;
+  --bdr-h: #c8c8c4;
+  --nav-bg: rgba(248, 248, 246, 0.85);
+  --outline: #d1d5db;
+  --outline-text: #374151;
+  --accent-hover: #1f2937;
+  --profile-bg: #e8e8e4;
+}
+
+[data-theme="dark"] {
+  --background: #050505;
+  --foreground: #a3a3a3;
+  --card: #0a0a0a;
+  --subtle: rgba(255, 255, 255, 0.03);
+  --tag: rgba(255, 255, 255, 0.04);
+  --heading: #ffffff;
+  --sec: #737373;
+  --muted: #525252;
+  --bdr: rgba(255, 255, 255, 0.06);
+  --bdr-h: rgba(255, 255, 255, 0.12);
+  --nav-bg: rgba(5, 5, 5, 0.85);
+  --outline: rgba(255, 255, 255, 0.1);
+  --outline-text: #d4d4d4;
+  --accent-hover: #e5e5e5;
+  --profile-bg: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-subtle: var(--subtle);
+  --color-tag: var(--tag);
+  --color-heading: var(--heading);
+  --color-sec: var(--sec);
+  --color-muted: var(--muted);
+  --color-bdr: var(--bdr);
+  --color-bdr-h: var(--bdr-h);
+  --color-nav-bg: var(--nav-bg);
+  --color-outline: var(--outline);
+  --color-outline-text: var(--outline-text);
+  --color-accent-hover: var(--accent-hover);
+  --color-profile-bg: var(--profile-bg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,8 +60,38 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.18) 0.6px, transparent 0.6px);
+  background-size: 22px 22px;
+}
+
+[data-theme="dark"] body {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0.6px, transparent 0.6px);
+  background-size: 22px 22px;
+}
+
+:root .card-lift {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+[data-theme="dark"] .card-lift {
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.03), 0 1px 2px rgba(255, 255, 255, 0.02);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bdr-h);
+  border-radius: 3px;
+}
+
+::selection {
+  background: var(--bdr-h);
 }

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reshmitha Reddy — Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    padding: 40px 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+  @media print {
+    body { padding: 20px 30px; }
+    @page { margin: 0.5in; size: A4; }
+  }
+  a { color: #1a1a1a; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .header { text-align: center; margin-bottom: 24px; border-bottom: 1.5px solid #111; padding-bottom: 16px; }
+  .header h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; }
+  .header .subtitle { font-size: 13px; color: #555; margin-bottom: 8px; }
+  .header .contact { font-size: 11.5px; color: #444; }
+  .header .contact span { margin: 0 8px; }
+
+  .section { margin-bottom: 18px; }
+  .section-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #111;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+
+  .exp-item { margin-bottom: 12px; }
+  .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .exp-header h3 { font-size: 13.5px; font-weight: 600; }
+  .exp-header .period { font-size: 11.5px; color: #666; }
+  .exp-company { font-size: 12px; color: #555; margin-bottom: 3px; }
+  .exp-desc { font-size: 12px; color: #333; }
+
+  .project-item { margin-bottom: 10px; }
+  .project-item h3 { font-size: 13px; font-weight: 600; display: inline; }
+  .project-item .tech { font-size: 11px; color: #666; }
+  .project-item p { font-size: 12px; color: #333; margin-top: 2px; }
+  .project-link { font-size: 11px; color: #0066cc; }
+
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+  .skill-category h4 { font-size: 11.5px; font-weight: 600; margin-bottom: 3px; }
+  .skill-category p { font-size: 11.5px; color: #444; }
+
+  .achieve-item { margin-bottom: 6px; font-size: 12px; }
+  .achieve-item strong { font-weight: 600; }
+
+  .edu-item { font-size: 12.5px; }
+  .edu-item .degree { font-weight: 600; }
+  .edu-item .school { color: #555; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chaikam Reshmitha Reddy</h1>
+  <div class="subtitle">Junior Software Engineer</div>
+  <div class="contact">
+    <span>Hyderabad, India</span>
+    <span>•</span>
+    <span>reshmithareddychaikam@gmail.com</span>
+    <span>•</span>
+    <span><a href="https://github.com/Reshmitha06">github.com/Reshmitha06</a></span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Summary</div>
+  <p style="font-size:12px;color:#333;">
+    Junior Software Engineer at Cognizant with a B.Tech in CSE (IoT). Skilled in full-stack development with React/Next.js, generative AI integration, EDA tooling, and 3D/VR development. Passionate about building AI-powered web applications and open-source tools.
+  </p>
+</div>
+
+<div class="section">
+  <div class="section-title">Education</div>
+  <div class="edu-item">
+    <span class="degree">B.Tech in Computer Science & Engineering (IoT)</span><br>
+    <span class="school">HITAM — Hyderabad Institute of Technology and Management | CGPA: 8.33</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Experience</div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <h3>Junior Software Engineer</h3>
+      <span class="period">2025 – Present</span>
+    </div>
+    <div class="exp-company">Cognizant, Hyderabad</div>
+    <div class="exp-desc">Contributing to software development and engineering solutions as a full-time engineer.</div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <h3>Web Development Intern</h3>
+      <span class="period">2024</span>
+    </div>
+    <div class="exp-company">QTech Solutions</div>
+    <div class="exp-desc">Designed and deployed company website using WordPress, HTML, CSS, JavaScript. Optimized for performance and SEO.</div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <h3>Junior Technical Engineer Intern</h3>
+      <span class="period">2024</span>
+    </div>
+    <div class="exp-company">Digi Quanta</div>
+    <div class="exp-desc">Assisted in IoT device development, debugging, and performance optimization.</div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <h3>Full Stack Development Intern</h3>
+      <span class="period">2023</span>
+    </div>
+    <div class="exp-company">Swecha Organization</div>
+    <div class="exp-desc">Built full-stack web apps using React, Node.js, Express.js, and MySQL.</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Projects</div>
+
+  <div class="project-item">
+    <h3>Pixcy</h3> — <span class="tech">Next.js, TypeScript, Gemini AI, Image/Voice Search</span>
+    <p>AI-powered fashion discovery platform with text, image & voice search across Myntra, Ajio, Amazon, Flipkart — price comparison and AI styling.</p>
+  </div>
+
+  <div class="project-item">
+    <h3>VR Campus Tour</h3> — <span class="tech">Next.js, React Three Fiber, Three.js, WebXR</span>
+    <p>Interactive 3D virtual walkthrough of HITAM campus with orbit controls, building info panels, and dynamic lighting.</p>
+  </div>
+
+  <div class="project-item">
+    <h3>WaveScope</h3> — <span class="tech">Next.js, TypeScript, Python, Canvas API, Gemini AI</span>
+    <p>Browser-based VCD waveform viewer with zoom/pan/cursor, AI signal analysis, and timing violation detection.</p>
+  </div>
+
+  <div class="project-item">
+    <h3>LogicForge</h3> — <span class="tech">Next.js, TypeScript, Gemini AI, SVG, Verilog</span>
+    <p>EDA logic simulator — boolean algebra, truth tables, K-maps, gate diagrams, and Verilog code generation.</p>
+  </div>
+
+  <div class="project-item">
+    <h3>SnapShrink</h3> — <span class="tech">Next.js, TypeScript, Canvas API</span>
+    <p>Client-side batch image compressor & format converter with drag-and-drop and real-time stats.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Skills</div>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <h4>Frontend</h4>
+      <p>React, Next.js, TypeScript, HTML/CSS</p>
+    </div>
+    <div class="skill-category">
+      <h4>AI / ML & Backend</h4>
+      <p>Generative AI, LLMs, RAG Pipelines, Python</p>
+    </div>
+    <div class="skill-category">
+      <h4>EDA & Tools</h4>
+      <p>Verilog/HDL, VCD Analysis, Canvas API, Git, Vercel</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Achievements & Leadership</div>
+  <div class="achieve-item"><strong>Published in IUCEE Magazine</strong> — Research article distributed across engineering institutions all over India</div>
+  <div class="achieve-item"><strong>PR Lead, IUCEE-EWB HITAM</strong> — Led Public Relations for 18 months, managed outreach and community engagement</div>
+  <div class="achieve-item"><strong>Volunteer, ForACause NGO</strong> — Active contributor for 1 year in social impact and awareness campaigns</div>
+</div>
+
+</body>
+</html>
