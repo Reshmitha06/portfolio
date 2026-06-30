@@ -256,20 +256,6 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-4 text-sm pt-4 border-t border-bdr">
-                    {project.link ? (
-                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-heading font-medium hover:text-foreground transition-colors">
-                        Live Demo &rarr;
-                      </a>
-                    ) : (
-                      <span className="text-sec font-medium">In Development</span>
-                    )}
-                    {project.github && (
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-sec hover:text-foreground transition-colors">
-                        Source Code
-                      </a>
-                    )}
-                  </div>
                 </div>
               </motion.div>
             );
