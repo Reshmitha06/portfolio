@@ -38,16 +38,6 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm px-4 py-1.5 border border-bdr rounded-lg text-heading hover:bg-subtle transition-colors"
-            >
-              Resume
-            </a>
-          </li>
         </ul>
 
         <button
@@ -85,17 +75,6 @@ export default function Navbar() {
                   </a>
                 </li>
               ))}
-              <li>
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileOpen(false)}
-                  className="block text-foreground hover:text-heading transition-colors"
-                >
-                  Resume
-                </a>
-              </li>
             </ul>
           </motion.div>
         )}
